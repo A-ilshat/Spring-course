@@ -1,21 +1,10 @@
 package ru.springCourse.main;
 
 public class TestBean {
-    private int id;
-
     private String name;
 
-    public TestBean(String name, int id) {
-        this.id = id;
+    public TestBean(String name) {
         this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
