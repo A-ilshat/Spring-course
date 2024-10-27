@@ -8,6 +8,7 @@
 
     <bean id="music"
           class="ru.springCourse.main.ClassicalMusic"
+          scope="prototype"
           init-method="doInit"
           destroy-method="doDestroy">
     </bean>

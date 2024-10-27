@@ -1,5 +1,7 @@
 package ru.springCourse.main;
 
+import sun.plugin2.os.windows.Windows;
+
 public class ClassicalMusic implements Music {
     @Override
     public String getSong() {
