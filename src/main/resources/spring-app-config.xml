@@ -6,17 +6,5 @@
 
     <contex:property-placeholder location="classpath:musicPlayer.properties"/>
 
-    <bean id="music"
-          class="ru.springCourse.main.ClassicalMusic"
-          scope="prototype"
-          init-method="doInit"
-          destroy-method="doDestroy">
-    </bean>
-
-    <bean id="musicPlayer"
-          class="ru.springCourse.main.MusicPlayer">
-        <property name="music" ref="music"/>
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+    <contex:component-scan base-package="ru.springCourse.main"/>
 </beans>
