@@ -7,6 +7,8 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring-app-config.xml");
         MusicPlayer player = context.getBean(MusicPlayer.class);
         player.play();
+
+        System.out.println(player.getName() + " : " + player.getVolume());
         context.close();
     }
 }
