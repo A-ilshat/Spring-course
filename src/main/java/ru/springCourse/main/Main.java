@@ -5,8 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring-app-config.xml");
-        Music testBean = context.getBean(Music.class);
-        MusicPlayer player = new MusicPlayer(testBean);
+        MusicPlayer player = context.getBean(MusicPlayer.class);
         player.play();
         context.close();
     }

@@ -6,4 +6,9 @@
     <bean id="music"
           class="ru.springCourse.main.ClassicalMusic">
     </bean>
+
+    <bean id="musicPlayer"
+          class="ru.springCourse.main.MusicPlayer">
+        <constructor-arg ref="music"/>
+    </bean>
 </beans>
