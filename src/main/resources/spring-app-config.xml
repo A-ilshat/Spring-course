@@ -7,7 +7,9 @@
     <contex:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="music"
-          class="ru.springCourse.main.ClassicalMusic">
+          class="ru.springCourse.main.ClassicalMusic"
+          init-method="doInit"
+          destroy-method="doDestroy">
     </bean>
 
     <bean id="musicPlayer"

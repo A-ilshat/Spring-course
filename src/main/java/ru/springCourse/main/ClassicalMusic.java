@@ -5,4 +5,28 @@ public class ClassicalMusic implements Music {
     public String getSong() {
         return "Play classical music";
     }
+
+    public void doInit() {
+        System.out.print("init... ");
+        for (int i = 0; i < 5; i++) {
+            try {
+                System.out.print(i + 1 + " ");
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    public void doDestroy() {
+        System.out.print("Destroy... ");
+        for (int i = 0; i < 5; i++) {
+            try {
+                System.out.print(i + 1 + " ");
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 }
