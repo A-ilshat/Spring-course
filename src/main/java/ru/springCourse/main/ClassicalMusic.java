@@ -8,9 +8,9 @@ public class ClassicalMusic implements Music {
 
     public void doInit() {
         System.out.print("init... ");
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i <= 5; i++) {
             try {
-                System.out.print(i + 1 + " ");
+                System.out.print(i + " ");
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
@@ -20,9 +20,9 @@ public class ClassicalMusic implements Music {
 
     public void doDestroy() {
         System.out.print("Destroy... ");
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i <= 5; i++) {
             try {
-                System.out.print(i + 1 + " ");
+                System.out.print(i + " ");
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
